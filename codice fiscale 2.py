@@ -1,4 +1,7 @@
 vocali='aeiouAEIOU'
+mesi = { '01':'A','02':'B','03':'C','04':'D',
+         '05':'E','06':'H','07':'L','08':'M',
+         '09':'P','10':'R','11':'S','12':'T'}
 c=input('Inserisci cognome')
 n=input('Inserisci nome')
 def calccognome():
@@ -9,19 +12,24 @@ def calccognome():
             voc.append(x)
         else:
             cons.append(x)
-        risultato=''.join(cons+voc+['x']*2)[0:3]
+    for x in cons:
+        if x==' ':
+            cons.remove(x) 
+            continue
+    risultato=''.join(cons+voc+['x']*2)[0:3]
     return risultato.upper()
 
 def calcnome():
     cons=[]
     voc=[]
-    for x in c:
+    for x in n:
         if x in vocali:
             voc.append(x)
         else:
             cons.append(x)
-        cons.remove([1:2])
-        risultato=''.join(cons+voc+['x']*2)[0:3]
+    if len(cons)>3:
+        cons[1:2]=[]
+    risultato=''.join(cons+voc+['x']*2)[0:3]
     return risultato.upper()
 
-print(calcnome())
+print(calccognome()+calcnome())
