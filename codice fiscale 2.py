@@ -4,6 +4,7 @@ mesi = { '01':'A','02':'B','03':'C','04':'D',
          '09':'P','10':'R','11':'S','12':'T'}
 c=input('Inserisci cognome')
 n=input('Inserisci nome')
+sesso=input('Inserire M o F')
 data=input('Inserisci data di nascita (gg/mm/aaaa): ').split('/')
 def calccognome():
     cons=[]
@@ -36,6 +37,10 @@ def calcnome():
 def calcdata():
     anno=data[2][2:]
     mese=mesi[data[1]]
-    risultato= anno+mese
+    if sesso=='M':
+        giorno=data[0]
+    else:
+        giorno=str(int(data[0])+40)
+    risultato= anno+mese+giorno
     return risultato.upper()
 print(calccognome()+calcnome()+calcdata())
