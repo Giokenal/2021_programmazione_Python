@@ -4,6 +4,7 @@ mesi = { '01':'A','02':'B','03':'C','04':'D',
          '09':'P','10':'R','11':'S','12':'T'}
 c=input('Inserisci cognome')
 n=input('Inserisci nome')
+data=input('Inserisci data di nascita (gg/mm/aaaa): ').split('/')
 def calccognome():
     cons=[]
     voc=[]
@@ -32,4 +33,9 @@ def calcnome():
     risultato=''.join(cons+voc+['x']*2)[0:3]
     return risultato.upper()
 
-print(calccognome()+calcnome())
+def calcdata():
+    anno=data[2][2:]
+    mese=mesi[data[1]]
+    risultato= anno+mese
+    return risultato.upper()
+print(calccognome()+calcnome()+calcdata())
