@@ -13,22 +13,15 @@ def random_select_nums_choices(n_list,n):
         return random.choices(n_list,k=n)
 
 
-n_list=['a','a','b','f','h','k','t','t']
-selec_nums=3
-# new_list=[]
-# for element in n_list:
-#     if element not in new_list:
-#         new_list.append(element)
-result_sample=random_select_nums_sample(n_list,selec_nums)
-
-for element in result_sample:
-    random.shuffle(result_sample)
-    print(result_sample.pop)
-
-
-
+n_list=['a','a','b','a','h','t','t']
+selec_nums=5
+new_list=[]
+for element in n_list:
+    if element not in new_list:
+        new_list.append(element)
+result_sample=random_select_nums_sample(new_list,selec_nums)
 
 
 # random_select_nums_randint(n_list,selec_nums)
 # print (random_select_nums_choices(n_list,selec_nums))
-# print (result_sample)
+print (result_sample)

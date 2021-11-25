@@ -19,12 +19,22 @@
 # listafinale.append(lista3)
 # print (listafinale)
 
-def multidimensional(list_element):
+# def multidimensional(list_element):
+#     nums=[]
+#     for i in range(3):
+#         nums.append([])
+#         for j in range(list_element):
+#             nums[i].append(2)
+#     return nums
+
+# print (multidimensional(3))
+n=int(input('Inserisci numero liste'))
+def multidimensional(n):
     nums=[]
-    for i in range(3):
+    for i in range(n):
         nums.append([])
-        for j in range(list_element):
-            nums[i].append(2)
+        for j in range(1,n+1):
+            nums[i].append(j)
     return nums
 
-print (multidimensional(3))
+print (multidimensional(n))
