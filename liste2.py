@@ -21,9 +21,14 @@ selec_nums=3
 #         new_list.append(element)
 result_sample=random_select_nums_sample(n_list,selec_nums)
 
+for element in result_sample:
+    random.shuffle(result_sample)
+    print(result_sample.pop)
+
+
 
 
 
 # random_select_nums_randint(n_list,selec_nums)
 # print (random_select_nums_choices(n_list,selec_nums))
-print (result_sample)
+# print (result_sample)
