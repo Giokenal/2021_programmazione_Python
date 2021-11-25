@@ -14,7 +14,7 @@ def random_select_nums_choices(n_list,n):
 
 
 n_list=['a','a','b','a','h','t','t']
-selec_nums=5
+selec_nums=3
 new_list=[]
 for element in n_list:
     if element not in new_list:
