@@ -28,7 +28,6 @@
 #     return nums
 
 # print (multidimensional(3))
-n=int(input('Inserisci numero liste'))
 def multidimensional(n):
     nums=[]
     for i in range(n):
@@ -37,4 +36,4 @@ def multidimensional(n):
             nums[i].append(j)
     return nums
 
-print (multidimensional(n))
+print (multidimensional(3))
