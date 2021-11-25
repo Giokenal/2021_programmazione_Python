@@ -29,6 +29,10 @@ def calcnome():
             voc.append(x)
         else:
             cons.append(x)
+    for x in cons:
+        if x==' ':
+            cons.remove(x) 
+            continue
     if len(cons)>3:
         cons[1:2]=[]
     risultato=''.join(cons+voc+['x']*2)[0:3]
