@@ -27,9 +27,9 @@ def ricerca():
     pass
 
 def stampa(ana):
-    print('Nome\t\tCognome\t\tTelefono\t\t\t\Email')
+    print('Nome\t\tCognome\t\tTelefono\t\tEmail')
     for el in ana:
-        print (el['nome']+'\t\t'+el['cognome']+'\t\t\t'+el['telefono']+'\t\t\t\'+el['email'])
+        print (el['nome']+'\t'+el['cognome']+'\t'+el['telefono']+'\t\t'+el['email'])
 
     
 
