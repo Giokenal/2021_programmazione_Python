@@ -191,3 +191,26 @@
 
 # print (lista_result) 
 
+# ESERCIZIO 21
+
+# l1=int(input('Inserire lunghezza lista: '))
+# lista=[]
+# listafin=[]
+# for i in range(0,l1):
+#     s=input('Inserisci elemento'+str(i)+': ')
+#     lista.append(s)
+# n=int(input('Lunghezza minima: '))
+# for elem in lista:
+#     if len(elem)>n:
+#         listafin.append(elem)
+# print(listafin)
+
+# ESERCIZIO 22
+
+# l1=int(input('Inserire lunghezza lista: '))
+# lista=[]
+# for i in range(0,l1):
+#      s=input('Inserisci elemento'+str(i)+': ')
+#      lista.append(s)
+#      stringa=''.join(lista)
+# print (stringa)
