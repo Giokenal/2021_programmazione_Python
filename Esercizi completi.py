@@ -214,3 +214,44 @@
 #      lista.append(s)
 #      stringa=''.join(lista)
 # print (stringa)
+
+# ESERCIZIO 23
+# import random
+# l1=int(input('Inserire lunghezza lista: '))
+# lista=[]
+# for i in range(0,l1):
+#       s=input('Inserisci elemento'+str(i)+': ')
+#       lista.append(s)
+# print(random.sample(lista,1))
+
+# ESERCIZIO 24
+
+# def multidimensional(list_element):
+#     nums=[]
+#     for i in range(3):
+#         nums.append([])
+#         for j in range(list_element):
+#             nums[i].append(0)
+#     return nums
+
+# print (multidimensional(3))
+
+# ESERCIZIO 25
+
+# def multidimensional(n):
+#     nums=[]
+#     for i in range(n):
+#         nums.append([])
+#         for j in range(1,n+1):
+#             nums[i].append(j)
+#     return nums
+
+# print (multidimensional(3))
+
+# ESERCIZIO 26
+
+# t=('a','b','c')
+# s=(input('Inserisci tupla'))
+# print (t+(s,))
+
+
