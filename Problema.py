@@ -1,3 +1,11 @@
+#PROGRAMMA PER LA RISOLUZIONE DI UN PROBLEMA
+
+# Un signore fa acquisti in 4 negozi diversi ed, in ognuno di essi, spende la metà di quanto
+# ha all'entrata di ciascun negozio, più 7 euro. Alla fine gli rimangono 10 euro.
+# Quanto ha speso in totale, ed in ciascun negozio?
+
+# SOLUZIONE:
+
 for x in range (0,100):
     if x-((x/2)+7)==10:
         for y in range (0,100):
@@ -12,6 +20,3 @@ for x in range (0,100):
                                 print (y)
                                 print (x)
                                 print (risultato)
-                
-
-    
